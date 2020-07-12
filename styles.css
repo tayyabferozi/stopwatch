@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: rgb(65, 55, 55);
+  font-weight: 500;
+  font-size: 2rem;
+  user-select: none;
+}
+
+body {
+  background-color: #fffdf1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.stopwatch-container {
+  width: 90%;
+  background-color: #e8505b;
+  text-align: center;
+  padding: 3rem 1rem;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.timer {
+  margin-bottom: 1rem;
+}
+
+.buttons button {
+  font-size: 0.75rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  color: #fff;
+  background-color: #14b1ab;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.buttons button:disabled {
+  pointer-events: none;
+  background-color: rgb(206, 201, 201);
+  transition: 0.25s ease;
+}
+
+.buttons button:focus {
+  outline: none;
+}
+
+@media screen and (min-width: 576px) {
+  .buttons button:hover {
+    color: #14b1ab;
+    background-color: #fff;
+  }
+}
+
+.hour-holder,
+.minute-holder,
+.second-holder {
+  width: 3.1rem;
+  display: inline-block;
+}
+
+.small {
+  font-size: 0.5rem;
+  position: relative;
+  right: 0.4rem;
+}
+
+@media screen and (max-width: 576px) {
+  * {
+    font-size: 1.5rem;
+  }
+
+  .hour-holder,
+  .minute-holder,
+  .second-holder {
+    width: 1.9rem;
+  }
+}

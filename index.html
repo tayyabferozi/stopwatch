@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="stopwatch-container">
+      <div class="timer">
+        <span class="hour-holder">
+          00
+        </span>
+        <span class="small">
+          H
+        </span>
+        :
+        <span class="minute-holder">
+          00
+        </span>
+        <span class="small">
+          M
+        </span>
+        :
+        <span class="second-holder">
+          00
+        </span>
+        <span class="small">
+          S
+        </span>
+      </div>
+      <div class="buttons">
+        <button id="start">Start</button>
+        <button id="stop" disabled>Stop</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
