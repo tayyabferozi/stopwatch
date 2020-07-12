@@ -1,6 +1,6 @@
 var startBtn = document.querySelector("#start");
 var stopBtn = document.querySelector("#stop");
-var lapBtn = document.querySelector("#lap");
+var resetBtn = document.querySelector("#reset");
 
 var secondHolder = document.querySelector(".second-holder");
 var minuteHolder = document.querySelector(".minute-holder");
@@ -43,4 +43,14 @@ stopBtn.addEventListener("click", function () {
   clearInterval(timerInterval);
   stopBtn.disabled = true;
   startBtn.disabled = false;
+});
+
+resetBtn.addEventListener("click", function () {
+  clearInterval(timerInterval);
+  stopBtn.disabled = false;
+  startBtn.disabled = false;
+
+  secondHolder.innerHTML = "00";
+  minuteHolder.innerHTML = "00";
+  hourHolder.innerHTML = "00";
 });
